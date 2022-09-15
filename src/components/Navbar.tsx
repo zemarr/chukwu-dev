@@ -92,7 +92,7 @@ const Navbar = () => {
                 </div>
                 <button onClick={handleNavState} className='md:hidden z-50'>
                     {/* {navbarOpen ? 'Close' : 'Open'} */}
-                    <StyledHamburger navbarOpen={navbarOpen} className='min-h-[18px] h-[20px] w-[30px] relative flex flex-col'>
+                    <StyledHamburger navbarOpen={navbarOpen} className='min-h-[18px] h-[18px] w-[28px] relative flex flex-col'>
                         <div className="up w-[30px] h-[2px] bg-white"></div>
                         <div className="center w-[30px] h-[2px] bg-white"></div>
                         <div className="bottom w-[30px] h-[2px] bg-white"></div>
@@ -133,7 +133,8 @@ const StyledHamburger = styled.div<NavType>`
 
     div:nth-child(2) {
         opacity: ${({ navbarOpen }) => (navbarOpen ? "0" : "1")};
-        transition: all 1s ease;
+        transform: ${({ navbarOpen }) => (navbarOpen ? "rotate(-315deg)" : "rotate(0deg)")};
+        transition: all .8s ease;
         transition-delay: 100ms;
     }
     div:nth-child(1) {
