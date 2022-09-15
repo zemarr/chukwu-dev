@@ -80,7 +80,7 @@ const Navbar = () => {
                             <NavLink to='/work' className={({ isActive }) => isActive ? 'border-b-2 border-b-[#007FF4] pb-2 transition-all duration-500' : 'border-b-2 border-b-[transparent] pb-2 transition duration-100'}><code><span className='text-mainBlue font-bold mr-4'>2.</span>Work</code></NavLink>
                         </li>
                         <li onClick={closeNav} className='flex items-center font-bold text-[15px] text-white leading-[19.36px] text-center mr-[20px]'>
-                            <a href='../assets/files/Chukwu_Ayika_Resume.pdf' download={'Chukwu_Ayika_Resume'}><code><span className='text-mainBlue font-bold mr-4'>3.</span>Resume</code></a>
+                            <a href='https://docs.google.com/document/d/1aSUiOSzvIq-ryaTXFRo1-PKAX2m0zn2u7TyXA7ublGo/' download='Chukwu_Ayika_Resume.pdf'><code><span className='text-mainBlue font-bold mr-4'>3.</span>Resume</code></a>
                             <svg className='text-white ml-2 w-[20px] h-[20px]' xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24">
                                 <path fill="currentColor" d="M14.29,17.29,13,18.59V13a1,1,0,0,0-2,0v5.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3a1,1,0,0,0-1.42-1.42ZM18.42,6.22A7,7,0,0,0,5.06,8.11,4,4,0,0,0,6,16a1,1,0,0,0,0-2,2,2,0,0,1,0-4A1,1,0,0,0,7,9a5,5,0,0,1,9.73-1.61,1,1,0,0,0,.78.67,3,3,0,0,1,.24,5.84,1,1,0,1,0,.5,1.94,5,5,0,0,0,.17-9.62Z" />
                             </svg>
@@ -107,7 +107,7 @@ const Navbar = () => {
                             <NavLink to='/work'><code><span className='text-mainBlue font-bold mr-4'>2.</span>WORK</code></NavLink>
                         </li>
                         <li onClick={closeNav} className='flex items-center justify-start font-normal text-[16px] text-white leading-[24px] text-left px-[30px] py-[20px] w-full'>
-                            <a href='../assets/files/Chukwu_Ayika_Resume.pdf' download={'Chukwu_Ayika_Resume'}><code><span className='text-mainBlue font-bold mr-4'>3.</span>RESUME</code></a>
+                            <a href='https://docs.google.com/document/d/1aSUiOSzvIq-ryaTXFRo1-PKAX2m0zn2u7TyXA7ublGo/' download='Chukwu_Ayika_Resume.pdf'><code><span className='text-mainBlue font-bold mr-4'>3.</span>RESUME</code></a>
                             <svg className='text-white ml-2 w-[20px] h-[20px]' xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24">
                                 <path fill="currentColor" d="M14.29,17.29,13,18.59V13a1,1,0,0,0-2,0v5.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3a1,1,0,0,0-1.42-1.42ZM18.42,6.22A7,7,0,0,0,5.06,8.11,4,4,0,0,0,6,16a1,1,0,0,0,0-2,2,2,0,0,1,0-4A1,1,0,0,0,7,9a5,5,0,0,1,9.73-1.61,1,1,0,0,0,.78.67,3,3,0,0,1,.24,5.84,1,1,0,1,0,.5,1.94,5,5,0,0,0,.17-9.62Z" />
                             </svg>
