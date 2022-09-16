@@ -49,3 +49,10 @@ code {
 .secondary-transition {
   transition: all 0.5s ease-in-out;
 }
+.bgImg {
+  background-image: url('./assets/webp/skyhigh-3.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: inherit;
+}
