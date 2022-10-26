@@ -27,12 +27,13 @@ code {
 
 .big-heading {
   margin: 0px;
-  font-size: clamp(35px, 8vw, 65px);
+  font-size: clamp(40px, 9vw, 65px);
   font-weight: 700;
   letter-spacing: -0.5px;
+  text-shadow: 0px 6px 5px rgba(150, 150, 150, 0.3);
 }
 .md-texts {
-  font-size: clamp(16px, 8vw, 20px) !important;
+  font-size: clamp(11px, 10vw, 18px) !important;
   letter-spacing: -0.3px !important;
 }
 .texts {
@@ -50,9 +51,12 @@ code {
   transition: all 0.5s ease-in-out;
 }
 .bgImg {
-  background-image: url('./assets/webp/skyhigh-3.webp');
+  background-image: url("./assets/webp/skyhigh-1.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: inherit;
+}
+.it-text-shadow {
+  text-shadow: 0px 6px 5px rgba(150, 150, 150, 0.3);
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import headshot from '../assets/webp/headshot.webp'
 import { motion } from 'framer-motion'
+import Footer from '../components/Footer';
 
 const About = () => {
     const technologies = ['Javascript', 'Typescript', 'React', 'Vue', 'NextJS', 'NuxtJS', 'Tailwindcss', 'Wordpress']
@@ -14,7 +15,7 @@ const About = () => {
         <code>{technology}</code>
     </li>))
     return (
-        <motion.div className='min-h-[calc(100vh-73px)] w-full max-w-[1300px] mx-auto flex flex-col justify-center px-[20px] md:py-0 py-[100px] pt-[150px]'
+        <motion.div className='min-h-[calc(100vh-73px)] w-full max-w-[1100px] mx-auto flex flex-col justify-center px-[20px] md:py-0 py-[100px] pt-[150px] relative'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 1 } }}
             exit={{ opacity: 0, transition: { delay: 0.5, duration: .5 } }}
@@ -24,7 +25,7 @@ const About = () => {
             </div>
             <div className="details flex items-center md:flex-row flex-col-reverse">
                 <div className="left lg:max-w-[60%] md:max-w-[50%] max-w-full">
-                    <p className='texts text-faintText'>My name is Chukwudalu and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I decided to try re-designing paystack’s website  — turns out hacking my way in creating the website altogether taught me a lot about HTML & CSS! <br /><br />
+                    <p className='md-texts text-faintText'>My name is Chukwudalu and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I decided to try re-designing paystack’s website  — turns out hacking my way in creating the website altogether taught me a lot about HTML & CSS! <br /><br />
                         Fast-forward to today, and I’ve had the privilege of working at a start-up, <a className='text-mainBlue' href="https://stutern.com" target="_blank" rel="noreferrer">an educational organization</a>, <a className='text-mainBlue' href="https://kinfolk.vc" target="_blank" rel="noreferrer">a VC</a>, and <a className='text-mainBlue' href="https://quabbly.com" target="_blank" rel="noreferrer">a no-code software company</a>. My main focus these days is building accessible, inclusive products and digital experiences at Kinfolk for a variety of porfolio companies. <br /><br />
                         Here are a few technologies I’ve been working with recently:</p>
                     <ul className='mt-6 grid grid-cols-2 gap-3'>
@@ -45,6 +46,7 @@ const About = () => {
                     </StyledHeadshot>
                 </div>
             </div>
+            <Footer />
         </motion.div>
     )
 }
@@ -54,8 +56,8 @@ const StyledHeadshot = styled.div`
         content: '';
         display: block;
         position: absolute;
-        left: 20px;
-        top: 20px;
+        left: 10px;
+        top: 10px;
         max-width: 320px;
         width: 100%;
         max-height: 320px;
@@ -67,8 +69,8 @@ const StyledHeadshot = styled.div`
     }
     :hover {
         ::after {
-            left: 15px;
-            top: 15px;
+            left: 12px;
+            top: 12px;
             transition: all .7s;
         }
         .indicate {

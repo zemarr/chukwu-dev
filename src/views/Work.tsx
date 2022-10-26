@@ -9,7 +9,7 @@ const Work = () => {
   const workExperience = [
     {
       company: 'Kinfolk',
-      company_website: 'https://kinfolk.vc',
+      company_website: 'https://kinfolk.vc/en',
       role: 'Software Engineer',
       duration: 'October 2021 - Present',
       duties: [
@@ -34,7 +34,7 @@ const Work = () => {
     }
   ]
   return (
-    <motion.div className='min-h-[calc(100vh-73px)] w-full max-w-[1300px] mx-auto flex flex-col md:justify-center justify-start px-[20px] md:py-0 py-[100px] pt-[150px]'
+    <motion.div className='min-h-[calc(100vh-73px)] w-full max-w-[1100px] mx-auto flex flex-col md:justify-center justify-start px-[20px] md:py-0 py-[100px] pt-[150px]'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 1 } }}
       exit={{ opacity: 0, transition: { delay: 0.5, duration: .5 } }}
