@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import headshot from '../assets/webp/headshot.webp'
 import { motion } from 'framer-motion'
 import Footer from '../components/Footer';
 
