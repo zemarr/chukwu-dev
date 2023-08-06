@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import headshot from '../assets/webp/headshot.webp'
 import { motion } from 'framer-motion'
 import Footer from '../components/Footer';
 
@@ -33,8 +32,8 @@ const About = () => {
                     </ul>
                 </div>
                 <div className="right lg:w-[40%] md:w-[50%] w-full flex items-center md:justify-center justify-start">
-                    <StyledHeadshot className='relative max-w-[320px] max-h-[320px] rounded-[8px] md:mt-0 mt-8 mb-16'>
-                        <img src={headshot} alt="chukwu" className='w-full h-full z-[2] relative blur-[0.7px] hover:blur-none transition-all' /> {/* blur-[2px] hover:blur-none transition-all */}
+                    <StyledHeadshot className='relative max-w-[320px] min-h-[320px] rounded-[8px] md:mt-0 mt-8 mb-16 cursor-none'>
+                        <img src='https://res.cloudinary.com/cdacs/image/upload/v1691278945/chukwu_ayika.f63cffee_amrt8s.webp' alt="chukwu" className='w-full h-full z-[2] relative blur-[4px] hover:blur-none transition-all' /> {/* blur-[2px] hover:blur-none transition-all */}
                         {/* <span className='indicate text-[13px] font-medium flex items-center justify-center rounded-full max-w-[max-content] px-[20px] py-[10px] mx-auto bg-[#ffffff3d] absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[2] opacity-[1] border-[2px] border-mainBlue'>
                             Hover here
                             <span className='block text-mainBlue ml-3'>
@@ -52,26 +51,43 @@ const About = () => {
 }
 
 const StyledHeadshot = styled.div`
+    ::before {
+        content: 'Hover me 🙃';
+        display: block;
+        position: absolute;
+        left: 40%;
+        top: 50%;
+        z-index: 3;
+        background-color: #ffffff0d;
+        color: white;
+        font-size: 12px;
+        padding: 6px 8px;
+        border-radius: 8px;
+
+    }
     ::after {
         content: '';
         display: block;
         position: absolute;
-        left: 10px;
-        top: 10px;
+        left: 12px;
+        top: 12px;
         max-width: 320px;
         width: 100%;
-        max-height: 320px;
+        min-height: 320px;
         height: 100%;
         border: solid 2px #007FF4;
         border-radius: 8px;
         z-index: 1;
-        transition: all .5s;
     }
     :hover {
         ::after {
-            left: 12px;
-            top: 12px;
-            transition: all .7s;
+            left: 10px;
+            top: 10px;
+            transition: all .2s;
+        }
+        ::before {
+            opacity: 0;
+            transition: all .2s;
         }
         .indicate {
             opacity: 0;

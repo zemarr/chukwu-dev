@@ -13,10 +13,12 @@ const Work = () => {
       role: 'Software Engineer',
       duration: 'October 2021 - Present',
       duties: [
-        'Write modern, performant, maintainable code for array of clients and internal projects',
-        'Work with a variety of different languages, platforms, frameworks and content management systems such as Javascript, Typescript, Vue, NuxtJs, NestJs, React, Wordpress and Netlify',
-        'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis',
-        'Collect, organize and document KPIs for startups making progress towards Sustainable Development Goals (SDGs)'
+        `Building and maintaining <a class='text-mainBlue text-[17px] italic underline' href='https://chronicles.kinfolk.vc' target='_blank'>Chronicles</a> - A collection of insightful articles featuring well known founders and companies; cutting edge research discussions; and valuable information regarding business and finance.`,
+        `Writing modern, performant, maintainable code for an array of clients and internal projects`,
+        `Working with a variety of different languages, platforms, frameworks and content management systems (Javascript, Typescript, Vue, NuxtJs, NestJs, React are used more often)`,
+        `Communicate with multi-disciplinary teams of engineers, designers, founders and clients on a daily basis`,
+        `Collect, organize and document KPIs for startups making progress towards Sustainable Development Goals (SDGs)`,
+        `Integral part of a multi-functional team building and maintaining <a class='text-mainBlue text-[17px] italic underline' href='https://onyx.kinfolk.vc' target='_blank'>Onyx</a>`
       ]
     },
     {
@@ -25,11 +27,11 @@ const Work = () => {
       role: 'Frontend Engineer',
       duration: 'May - October 2021',
       duties: [
-        'Engineered and maintained major features of Quabbly web app using Angular, Typescript and SCSS',
-        'Proposed and implemented scalable solutions to issues identified with services and applications responsible for communicating with Quabbly web app',
-        'Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Quabbly’s apps',
-        'Ran unit tests on the user interface before launching new features to ensure quality, error-free production-ready code',
-        "Rebuilt the company's main website using NextJs, SCSS and Wordpress as a CMS"
+        `Engineered and maintained major features of Quabbly web app using Angular, Typescript and SCSS`,
+        `Proposed and implemented scalable solutions to issues identified with services and applications responsible for communicating with Quabbly web app`,
+        `Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Quabbly’s apps`,
+        `Ran unit tests on the user interface before launching new features to ensure quality, error-free production-ready code`,
+        `Rebuilt the company's main website using NextJs, SCSS and Wordpress as a CMS`
       ]
     }
   ]
@@ -75,7 +77,9 @@ const Work = () => {
                           </div>
                           <ul className="body">
                             {workExperience[i].duties.map((exp, index) => (
-                              <li className='text-faintText' key={index}>{exp}</li>
+                              <li className='text-faintText' key={index}>
+                                <div dangerouslySetInnerHTML={{ __html: exp }}></div>
+                              </li>
                             ))}
                           </ul>
                         </div>
